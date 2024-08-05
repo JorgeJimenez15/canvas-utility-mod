@@ -17,6 +17,6 @@ Enhance the functionality and user experience by providing a suite of tools to i
 
 We welcome and appreciate contributions of all kinds! Here’s how you can help:
 
--   Tell others about this repository and help us reach more people.
--   Star the Repo and follow my [GitHub account](https://github.com/JorgeJimenez15).
--   Feel free to contribute code by forking the repo, making changes, and opening a pull request.
+- Tell others about this repository and help us reach more people.
+- Star the Repo and follow my [GitHub account](https://github.com/JorgeJimenez15).
+- Feel free to contribute code by forking the repo, making changes, and opening a pull request.
