@@ -1,6 +1,6 @@
 # canvas-utility-mod
 
-[![Discord](https://img.shields.io/discord/1268347443712360509?logo=discord)](https://discord.gg/8G7YtYQv)
+[![Discord](https://img.shields.io/discord/1268347443712360509?logo=discord)](https://discord.gg/nStnDTjucy)
 
 Enhance the functionality and user experience by providing a suite of tools to improve the Canvas Learning Management System for students. This extension aims to streamline certain tasks, making the learning process more efficient and manageable.
 
