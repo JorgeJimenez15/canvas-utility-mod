@@ -1,3 +1,23 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.toastify {
+	@apply fixed z-[210] cursor-pointer bg-gray-200 px-5 py-3 text-gray-900 opacity-0 transition-all duration-500;
+}
+
+.toastify.on {
+	@apply opacity-100;
+}
+
+.toastify-bottom {
+	@apply -bottom-32;
+}
+
+.toastify-left {
+	@apply left-4;
+}
+
+.toastify-right {
+	@apply right-4;
+}
