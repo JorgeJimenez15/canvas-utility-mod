@@ -31,6 +31,9 @@ function tampermonkey(): Plugin {
 }
 
 export default defineConfig({
+	define: {
+		VERSION: `"${process.env.npm_package_version}"`
+	},
 	plugins: [svelte(), cssInjectedByJsPlugin(), tampermonkey()],
 	build: {
 		lib: {
