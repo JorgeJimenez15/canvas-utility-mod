@@ -19,7 +19,8 @@ async function patchChunk(source: string) {
 			Toastify({
 				text: `${name} patch was applied successfully!`,
 				gravity: 'bottom',
-				position: 'right'
+				position: 'right',
+				className: 'twp'
 			}).showToast();
 		}
 	}

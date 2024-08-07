@@ -16,7 +16,7 @@ function tampermonkey(): Plugin {
 		'// @run-at       document-start',
 		'// ==/UserScript=='
 	].join('\n');
-	const patch = (code: string) => `${headers}\n\n(function(window){${code}})(window);`;
+	const patch = (code: string) => `${headers}\n\n(function(window){\n${code}})(window);`;
 
 	return {
 		name: 'tampermonkey',
