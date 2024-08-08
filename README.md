@@ -6,6 +6,8 @@ Enhance the functionality and user experience by providing a suite of tools to i
 
 ## Quick start
 
+Tutorial video: https://youtu.be/oqJyPlDbrQc
+
 1. Install [Tampermonkey BETA](https://www.tampermonkey.net/)
 2. Download the userscript from the [release page](https://github.com/JorgeJimenez15/canvas-utility-mod/releases)
 3. Open Tampermonkey and click on the "Create a new script..." button
@@ -20,7 +22,7 @@ Please consider contributing if you like this project.
 We welcome and appreciate contributions of all kinds! Here’s how you can help:
 
 - Tell others about this repository and help us reach more people
-- Star the Repo and follow my [GitHub account](https://github.com/JorgeJimenez15)
+- Star the Repo and follow my [YouTube](https://youtube.com/@jorge-a-jimenez) and [GitHub](https://github.com/JorgeJimenez15) account
 - Feel free to contribute code by forking the repo, making changes, and opening a pull request
 
 ## License
