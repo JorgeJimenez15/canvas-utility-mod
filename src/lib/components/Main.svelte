@@ -1,0 +1,39 @@
+<script lang="ts">
+	import Home from './Home.svelte';
+	import Quiz from './Quiz.svelte';
+	import Patch from './Patch.svelte';
+	import Config from './Config.svelte';
+	import sections from '../data/sections.json';
+
+	let currentSection = $state('home');
+
+	const updateSection = (id: string) => (currentSection = id);
+</script>
+
+<main class="mx-4 flex h-64 flex-col">
+	<ul class="mb-4 flex gap-2">
+		{#each sections as section}
+			<li>
+				<button
+					class="w-16 border-b-2 pb-2 text-red-300 transition-colors duration-500 *:mx-auto *:size-6 hover:text-red-400 {currentSection ===
+					section.id
+						? 'border-red-300 hover:border-red-400'
+						: 'border-transparent'}"
+					onclick={() => updateSection(section.id)}>{@html section.icon}</button
+				>
+			</li>
+		{/each}
+	</ul>
+
+	<div class="grow overflow-y-auto">
+		{#if currentSection === 'home'}
+			<Home />
+		{:else if currentSection === 'quiz'}
+			<Quiz />
+		{:else if currentSection === 'patch'}
+			<Patch />
+		{:else if currentSection === 'config'}
+			<Config />
+		{/if}
+	</div>
+</main>
