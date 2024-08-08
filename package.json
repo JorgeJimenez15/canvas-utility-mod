@@ -6,6 +6,8 @@
 	"scripts": {
 		"dev": "vite",
 		"build": "vite build",
+		"build:dev": "vite build --mode devdevelopment",
+		"build:stage": "vite build --mode staging",
 		"check": "svelte-check --tsconfig ./tsconfig.json && tsc -p tsconfig.node.json",
 		"lint": "prettier --check . && eslint .",
 		"format": "prettier --write ."
