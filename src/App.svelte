@@ -5,9 +5,8 @@
 
 	let showOverlay = $state(false);
 
-	window.addEventListener('keydown', ({ key, altKey }) => {
+	window.addEventListener('keydown', ({ key, altKey }): void => {
 		if (!altKey || key !== 'r') return;
-
 		showOverlay = !showOverlay;
 	});
 </script>

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import list from '../functions/patches';
+	import list from '../../functions/patches';
 </script>
 
 <h1 class="mb-4 text-xl font-bold text-gray-700">{list.length} patches loaded</h1>

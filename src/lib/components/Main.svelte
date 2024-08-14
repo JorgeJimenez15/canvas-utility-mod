@@ -1,12 +1,11 @@
 <script lang="ts">
-	import Home from './Home.svelte';
-	import Quiz from './Quiz.svelte';
-	import Patch from './Patch.svelte';
-	import Config from './Config.svelte';
+	import Home from './sections/Home.svelte';
+	import Quiz from './sections/Quiz.svelte';
+	import Patch from './sections/Patch.svelte';
+	import Config from './sections/Config.svelte';
 	import sections from '../data/sections.json';
 
 	let currentSection = $state('home');
-
 	const updateSection = (id: string) => (currentSection = id);
 </script>
 
