@@ -2,6 +2,13 @@
 	<ul class="flex gap-2">
 		<li>
 			<a
+				href="https://discord.gg/nStnDTjucy"
+				target="_blank"
+				class="underline transition-colors hover:text-red-400 focus:text-red-400">Discord</a
+			>
+		</li>
+		<li>
+			<a
 				href="https://github.com/JorgeJimenez15/canvas-utility-mod"
 				target="_blank"
 				class="underline transition-colors hover:text-red-400 focus:text-red-400">GitHub</a
@@ -9,9 +16,9 @@
 		</li>
 		<li>
 			<a
-				href="https://discord.gg/nStnDTjucy"
+				href="https://youtube.com/@jorge-a-jimenez"
 				target="_blank"
-				class="underline transition-colors hover:text-red-400 focus:text-red-400">Discord</a
+				class="underline transition-colors hover:text-red-400 focus:text-red-400">YouTube</a
 			>
 		</li>
 	</ul>
