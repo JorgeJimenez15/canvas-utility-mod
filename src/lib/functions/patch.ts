@@ -1,33 +1,7 @@
-import Toastify from 'toastify-js';
-import list from './patches';
+import isChunk from './utils/isChunk';
+import patchChunk from './utils/patchChunk';
 
-const isChunk = (node: Node): boolean =>
-	node.nodeType === 1 &&
-	node.nodeName === 'SCRIPT' &&
-	node instanceof HTMLElement &&
-	node.hasAttribute('data-webpack');
-
-const patchChunk = async (source: string): Promise<void> => {
-	const response = await fetch(source);
-	let body = await response.text();
-
-	for (const { name, search, replace } of list) {
-		if (search.test(body)) {
-			body = body.replace(search, replace);
-
-			Toastify({
-				text: `${name} patch was applied successfully!`,
-				gravity: 'bottom',
-				position: 'right',
-				className: 'twp'
-			}).showToast();
-		}
-	}
-
-	Function(body)();
-};
-
-const initialize = (): void => {
+const patch = (): void => {
 	const appendChild = document.head.appendChild;
 
 	// TODO: Write better type definitions
@@ -39,4 +13,4 @@ const initialize = (): void => {
 	};
 };
 
-export default initialize;
+export default patch;

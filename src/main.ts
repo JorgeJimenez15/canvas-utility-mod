@@ -1,12 +1,11 @@
 import Toastify from 'toastify-js';
 import { mount } from 'svelte';
 
-import initialize from './lib/functions/patch';
+import patch from './lib/functions/patch';
 import App from './App.svelte';
 import './app.css';
 
-initialize();
-
+patch();
 window.addEventListener('load', () => {
 	mount(App, {
 		target: document.body
