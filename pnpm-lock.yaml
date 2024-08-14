@@ -14,6 +14,9 @@ importers:
       '@tsconfig/svelte':
         specifier: ^5.0.4
         version: 5.0.4
+      '@types/tampermonkey':
+        specifier: ^5.0.3
+        version: 5.0.3
       '@types/toastify-js':
         specifier: ^1.12.3
         version: 1.12.3
@@ -401,6 +404,9 @@ packages:
 
   '@types/pug@2.0.10':
     resolution: {integrity: sha512-Sk/uYFOBAB7mb74XcpizmH0KOR2Pv3D2Hmrh1Dmy5BmK3MpdSa5kqZcg6EKBdklU0bFXX9gCfzvpnyUehrPIuA==}
+
+  '@types/tampermonkey@5.0.3':
+    resolution: {integrity: sha512-i8+x8ipoib8xAfho25oNTbILgrO665oxq5tNr3LvH5DaW5UOPsc88Fe1mTVTDwsux5LYOcd8Syb6q+s95x878Q==}
 
   '@types/toastify-js@1.12.3':
     resolution: {integrity: sha512-9RjLlbAHMSaae/KZNHGv19VG4gcLIm3YjvacCXBtfMfYn26h76YP5oxXI8k26q4iKXCB9LNfv18lsoS0JnFPTg==}
@@ -1777,6 +1783,8 @@ snapshots:
   '@types/estree@1.0.5': {}
 
   '@types/pug@2.0.10': {}
+
+  '@types/tampermonkey@5.0.3': {}
 
   '@types/toastify-js@1.12.3': {}
 
