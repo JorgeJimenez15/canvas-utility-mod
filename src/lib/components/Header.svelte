@@ -1,5 +1,5 @@
 <script lang="ts">
-	const { display_name, avatar_image_url } = window.ENV.current_user;
+	const { display_name, avatar_image_url } = unsafeWindow.ENV.current_user;
 </script>
 
 <header class="flex h-16 items-center justify-between bg-red-400 text-gray-100">

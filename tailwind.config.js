@@ -4,7 +4,11 @@ import { scopedPreflightStyles, isolateInsideOfContainer } from 'tailwindcss-sco
 export default {
 	content: ['./index.html', './src/**/*.{svelte,js,ts,jsx,tsx}'],
 	theme: {
-		extend: {}
+		extend: {
+			transitionDuration: {
+				DEFAULT: '500ms'
+			}
+		}
 	},
 	plugins: [
 		scopedPreflightStyles({

@@ -1,4 +1,4 @@
-import page_blured from './page_blurred';
+import page_blurred from './page_blurred';
 import page_focused from './page_focused';
 
 export type Patch = {
@@ -8,6 +8,6 @@ export type Patch = {
 	replace: string;
 };
 
-const list = [page_blured, page_focused];
+const list: Patch[] = [page_blurred, page_focused];
 
 export default list;
