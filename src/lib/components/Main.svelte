@@ -14,7 +14,7 @@
 		{#each sections as section}
 			<li>
 				<button
-					class="w-16 border-b-2 pb-2 text-red-300 transition-colors duration-500 *:mx-auto *:size-6 hover:text-red-400 {currentSection ===
+					class="w-16 border-b-2 pb-2 text-red-300 transition-colors *:mx-auto *:size-6 hover:text-red-400 {currentSection ===
 					section.id
 						? 'border-red-300 hover:border-red-400'
 						: 'border-transparent'}"
@@ -24,7 +24,7 @@
 		{/each}
 	</ul>
 
-	<div class="grow overflow-y-auto">
+	<div class="grow space-y-4 overflow-y-auto text-gray-700">
 		{#if currentSection === 'home'}
 			<Home />
 		{:else if currentSection === 'quiz'}
