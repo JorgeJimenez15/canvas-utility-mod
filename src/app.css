@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 .toastify {
-	@apply fixed z-[210] cursor-pointer bg-gray-200 px-5 py-3 text-gray-900 opacity-0 transition-all duration-500;
+	@apply fixed z-[210] cursor-pointer bg-gray-200 px-5 py-3 text-gray-900 opacity-0 transition-all;
 }
 
 .toastify.on {
