@@ -1,5 +1,5 @@
-import Toastify from 'toastify-js';
 import list from '../patches';
+import notify from './notify';
 
 const patchChunk = async (source: string): Promise<void> => {
 	const response = await fetch(source);
@@ -9,12 +9,7 @@ const patchChunk = async (source: string): Promise<void> => {
 		if (search.test(body)) {
 			body = body.replace(search, replace);
 
-			Toastify({
-				text: `${name} patch was applied successfully!`,
-				gravity: 'bottom',
-				position: 'right',
-				className: 'twp'
-			}).showToast();
+			notify(`${name} patch was applied successfully!`, true);
 		}
 	}
 
