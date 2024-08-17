@@ -3,9 +3,13 @@
 	import Quiz from './sections/Quiz.svelte';
 	import Patch from './sections/Patch.svelte';
 	import Config from './sections/Config.svelte';
+
+	import type { Config as UserConfig } from '../functions/config';
 	import sections from '../data/sections.json';
 
+	let { config }: { config: UserConfig } = $props();
 	let currentSection = $state<string>('home');
+
 	const updateSection = (id: string): void => {
 		currentSection = id;
 	};
@@ -35,7 +39,7 @@
 		{:else if currentSection === 'patch'}
 			<Patch />
 		{:else if currentSection === 'config'}
-			<Config />
+			<Config {config} />
 		{/if}
 	</div>
 </main>
