@@ -5,8 +5,10 @@
 	import Config from './sections/Config.svelte';
 	import sections from '../data/sections.json';
 
-	let currentSection = $state('home');
-	const updateSection = (id: string) => (currentSection = id);
+	let currentSection = $state<string>('home');
+	const updateSection = (id: string): void => {
+		currentSection = id;
+	};
 </script>
 
 <main class="mx-4 flex h-64 flex-col">
@@ -14,6 +16,7 @@
 		{#each sections as section}
 			<li>
 				<button
+					type="button"
 					class="w-16 border-b-2 pb-2 text-red-300 transition-colors *:mx-auto *:size-6 hover:text-red-400 {currentSection ===
 					section.id
 						? 'border-red-300 hover:border-red-400'

@@ -24,7 +24,7 @@
 				<div class="flex w-full gap-2">
 					<input type="text" class="grow bg-gray-100 px-4 py-2 text-sm" />
 					<button
-						type="submit"
+						type="button"
 						class="bg-red-400 px-4 py-2 text-sm text-gray-100 transition-colors hover:bg-red-500"
 						>Update</button
 					>
@@ -38,6 +38,7 @@
 		<h1 class="mb-3 text-xl font-bold">Global</h1>
 
 		<button
+			type="button"
 			class="w-full bg-red-400 px-4 py-2 text-sm text-gray-100 transition-colors hover:bg-red-500"
 			onclick={() => {}}>Restore default settings</button
 		>
