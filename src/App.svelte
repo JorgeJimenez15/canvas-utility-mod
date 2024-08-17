@@ -3,11 +3,20 @@
 	import Main from './lib/components/Main.svelte';
 	import Footer from './lib/components/Footer.svelte';
 
-	let showOverlay = $state(false);
+	import type { Config } from './lib/functions/config';
+	import getConfig from './lib/functions/utils/getConfig';
+
+	let config = $state<Config>(getConfig());
+	let showOverlay = $state<boolean>(false);
 
 	window.addEventListener('keydown', ({ key, altKey }): void => {
-		if (!altKey || key !== 'r') return;
-		showOverlay = !showOverlay;
+		if (!altKey) return;
+
+		switch (key.toUpperCase()) {
+			case config.keyMapping.toggleOverlay:
+				showOverlay = !showOverlay;
+				break;
+		}
 	});
 </script>
 
@@ -18,7 +27,7 @@
 >
 	<div class="w-full max-w-3xl select-none space-y-4 bg-white text-gray-900 antialiased">
 		<Header />
-		<Main />
+		<Main {config} />
 		<Footer />
 	</div>
 </div>

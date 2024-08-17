@@ -10,6 +10,8 @@ function tampermonkey(): Plugin {
 		'// @namespace    https://github.com/JorgeJimenez15/canvas-utility-mod',
 		`// @version      ${process.env.npm_package_version}`,
 		'// @description  Work-in-progress utility mod for Canvas LMS',
+		'// @grant        GM_setValue',
+		'// @grant        GM_getValue',
 		'// @grant        GM_cookie',
 		'// @author       Jorge Jiménez',
 		'// @match        https://canvas.instructure.com/*',
